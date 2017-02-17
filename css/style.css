@@ -1332,6 +1332,9 @@ article footer .addthis iframe {
 .entry .gist .gist-file .gist-meta a:visited {
   color: #0085ff;
 }
+.div4pre {
+  white-space: pre;
+}
 figure.highlight {
   background: #eee;
   border: 1px solid #ddd;
