@@ -1358,7 +1358,6 @@ figure.highlight pre {
   border: none;
   padding: 0;
   margin: 0;
-  white-space: nowrap;
 }
 figure.highlight table {
   margin-top: 0;
