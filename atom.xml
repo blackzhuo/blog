@@ -296,11 +296,12 @@
     <link href="http://www.xuerlove.com/2016/10/31/mongodb/"/>
     <id>http://www.xuerlove.com/2016/10/31/mongodb/</id>
     <published>2016-10-31T11:57:13.000Z</published>
-    <updated>2017-02-17T03:13:09.000Z</updated>
+    <updated>2017-02-17T07:51:05.000Z</updated>
     <content type="html"><![CDATA[<h4 id="环境">环境</h4><ul>
 <li>centeros</li>
 </ul>
-<h4 id="下载">下载</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http:<span class="comment">//fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.2.10.tgz</span></div></pre></td></tr></table></figure>
+<h4 id="下载">下载</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo test</div></pre></td></tr></table></figure>
+<p>wget <a href="http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.2.10.tgz" target="_blank" rel="external">http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.2.10.tgz</a></p>
 <h4 id="解压">解压</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo tar -zxvf mongodb-linux-x86_64<span class="number">-3.2</span><span class="number">.10</span>.tgz</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <h4 id="加入PATH">加入PATH</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd mongodb-linux-x86_64<span class="number">-3.2</span><span class="number">.10</span></div><div class="line"><span class="keyword">export</span> PATH=<span class="regexp">/home/</span>q/mongodb-linux-x86_64<span class="number">-3.2</span><span class="number">.10</span>/bin:$PATH</div></pre></td></tr></table></figure>
@@ -353,7 +354,8 @@
     <![CDATA[<h4 id="环境">环境</h4><ul>
 <li>centeros</li>
 </ul>
-<h4 id="下载">下载</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget http:<span class="comment">//fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.2.10.tgz</span></div></pre></td></tr></table></figure>
+<h4 id="下载">下载</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo test</div></pre></td></tr></table></figure>
+<p>wget <a href="http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.2.10.tgz">http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.2.10.tgz</a></p>
 <h4 id="解压">解压</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo tar -zxvf mongodb-linux-x86_64<span class="number">-3.2</span><span class="number">.10</span>.tgz</div></pre></td></tr></table></figure>]]>
     
     </summary>
