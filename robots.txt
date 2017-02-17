@@ -1,0 +1,7 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+
+Sitemap: http://www.xuerlove.com/sitemap.xml
+Sitemap: http://www.xuerlove.com/baidusitemap.xml
