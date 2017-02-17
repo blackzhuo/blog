@@ -156,7 +156,7 @@ jsx http://reactjs.cn/react/docs/jsx-in-depth.html">
 <li><p>shouldComponentUpdate</p>
 <ul>
 <li><p>在接收到新的props或者state的时候，渲染之前调用，在初始化的时候不会调用，如果确定新的props和state不会导致组件更新，可以返回false,默认返回true</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">shouldComponentUpdate: <span class="function"><span class="keyword">function</span>(<span class="params">nextProps, nextState</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> nextProps.id !== <span class="keyword">this</span>.props.id;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div><div class="line">3</div></div></td><td class="code"><div class="div4pre"><div class="line">shouldComponentUpdate: <span class="function"><span class="keyword">function</span>(<span class="params">nextProps, nextState</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> nextProps.id !== <span class="keyword">this</span>.props.id;</div><div class="line">&#125;</div></div></td></tr></table></figure>
 </li>
 <li><p>这个方法可以提升程序性能，一些依赖父级props，组件本身会发送请求的情况，可以判断传入props是否是更新后的，然后再去执行接下来的动作。</p>
 </li>
