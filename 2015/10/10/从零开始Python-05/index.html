@@ -93,15 +93,15 @@
 				<ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#dict"><span class="toc-number">1.</span> <span class="toc-text">dict</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#set"><span class="toc-number">2.</span> <span class="toc-text">set</span></a></li></ol>
 			</div>
 		
-        <h5 id="dict">dict</h5><p>键值对 字典<br><figure class="highlight python"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div><div class="line">3</div></div></td><td class="code"><div class="div4pre"><div class="line">x = &#123;<span class="string">'a'</span>:<span class="number">1</span>,<span class="string">'b'</span>:<span class="number">2</span>&#125;</div><div class="line">len(x) <span class="comment">#集合大小</span></div><div class="line"><span class="keyword">print</span> x[<span class="string">'a'</span>] <span class="comment"># 1</span></div></div></td></tr></table></figure></p>
+        <h5 id="dict">dict</h5><p>键值对 字典<br><figure class="highlight python"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div><div class="line">3</div></td><td class="code"><div class="line">x = &#123;<span class="string">'a'</span>:<span class="number">1</span>,<span class="string">'b'</span>:<span class="number">2</span>&#125;</div><div class="line">len(x) <span class="comment">#集合大小</span></div><div class="line"><span class="keyword">print</span> x[<span class="string">'a'</span>] <span class="comment"># 1</span></div></td></tr></table></figure></p>
 <a id="more"></a>
 <ul>
 <li>key value形式，通过key查找</li>
 <li><p>通过key去访问value，如果key不存在就报错，为了避免报错，可以先判断</p>
-<figure class="highlight python"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div></div></td><td class="code"><div class="div4pre"><div class="line"><span class="keyword">if</span> <span class="string">'a'</span> <span class="keyword">in</span> x:</div><div class="line">    <span class="keyword">print</span> x[<span class="string">'a'</span>]</div></div></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div></td><td class="code"><div class="line"><span class="keyword">if</span> <span class="string">'a'</span> <span class="keyword">in</span> x:</div><div class="line">    <span class="keyword">print</span> x[<span class="string">'a'</span>]</div></td></tr></table></figure>
 </li>
 <li><p>使用get方法，在key不存在的时候返回None</p>
-<figure class="highlight python"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div></div></td><td class="code"><div class="div4pre"><div class="line"><span class="keyword">print</span> x.get(<span class="string">'a'</span>) <span class="comment"># 1</span></div></div></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><div class="line">1</div></td><td class="code"><div class="line"><span class="keyword">print</span> x.get(<span class="string">'a'</span>) <span class="comment"># 1</span></div></td></tr></table></figure>
 </li>
 <li><p>查找速度快，但是消耗内存大，list占用内存小，查找速度慢</p>
 </li>
@@ -109,15 +109,15 @@
 <li>存储没有顺序</li>
 <li>key不可变</li>
 <li><p>增加一个元素,如果key已经存在则覆盖值</p>
-<figure class="highlight python"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div></div></td><td class="code"><div class="div4pre"><div class="line">x[<span class="string">'c'</span>] = <span class="number">3</span></div></div></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><div class="line">1</div></td><td class="code"><div class="line">x[<span class="string">'c'</span>] = <span class="number">3</span></div></td></tr></table></figure>
 </li>
 <li><p>遍历for in</p>
-<figure class="highlight python"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div><div class="line">3</div></div></td><td class="code"><div class="div4pre"><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> x:</div><div class="line">    <span class="keyword">print</span> i</div><div class="line">    <span class="keyword">print</span> x[i]</div></div></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div><div class="line">3</div></td><td class="code"><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> x:</div><div class="line">    <span class="keyword">print</span> i</div><div class="line">    <span class="keyword">print</span> x[i]</div></td></tr></table></figure>
 </li>
 </ul>
 <h5 id="set">set</h5><ul>
 <li><p>建立一组key,key永远不会重复，无序的，元素不能改变</p>
-<figure class="highlight python"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></div></td><td class="code"><div class="div4pre"><div class="line">x = set([<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="string">'c'</span>])</div><div class="line"></div><div class="line"><span class="keyword">print</span> x <span class="comment"># set(['a','c','b'])</span></div><div class="line"></div><div class="line"><span class="comment">#访问</span></div><div class="line"><span class="string">'a'</span> <span class="keyword">in</span> x <span class="comment"># True</span></div></div></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></td><td class="code"><div class="line">x = set([<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>,<span class="string">'c'</span>])</div><div class="line"></div><div class="line"><span class="keyword">print</span> x <span class="comment"># set(['a','c','b'])</span></div><div class="line"></div><div class="line"><span class="comment">#访问</span></div><div class="line"><span class="string">'a'</span> <span class="keyword">in</span> x <span class="comment"># True</span></div></td></tr></table></figure>
 </li>
 <li><p>使用for in遍历</p>
 </li>

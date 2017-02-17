@@ -118,7 +118,7 @@ normalize()合并文本节点">
 </ul>
 <h5 id="namedItem_返回标签集合中指定name元素">namedItem 返回标签集合中指定name元素</h5><ul>
 <li>使用中括号的方式能达到namedItem效果</li>
-<li>获取所有html元素，传入<code>*</code><figure class="highlight javascript"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></div></td><td class="code"><div class="div4pre"><div class="line"><span class="keyword">var</span> images = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'image'</span>);</div><div class="line"><span class="keyword">var</span> logo = images.namedItem(<span class="string">'logo'</span>);</div><div class="line"><span class="keyword">var</span> author = images[<span class="string">'author'</span>];</div><div class="line"><span class="built_in">document</span>.getElementsByName</div></div></td></tr></table></figure>
+<li>获取所有html元素，传入<code>*</code><figure class="highlight javascript"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></td><td class="code"><div class="line"><span class="keyword">var</span> images = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'image'</span>);</div><div class="line"><span class="keyword">var</span> logo = images.namedItem(<span class="string">'logo'</span>);</div><div class="line"><span class="keyword">var</span> author = images[<span class="string">'author'</span>];</div><div class="line"><span class="built_in">document</span>.getElementsByName</div></td></tr></table></figure>
 </li>
 </ul>
 <p>与 document.getElementsByTagName 类似</p>
@@ -143,7 +143,7 @@ normalize()合并文本节点">
 </ul>
 <h5 id="方法">方法</h5><ul>
 <li><p>getNamedItem(name) 返回指定属性值 (可以使用方括号访问方式)</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div></div></td><td class="code"><div class="div4pre"><div class="line"><span class="keyword">var</span> id = elements.attributes.getNamedItem(<span class="string">'id'</span>).nodeValue;</div><div class="line"><span class="keyword">var</span> id = elements.attributes[<span class="string">'id'</span>].nodeValue;</div></div></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div></td><td class="code"><div class="line"><span class="keyword">var</span> id = elements.attributes.getNamedItem(<span class="string">'id'</span>).nodeValue;</div><div class="line"><span class="keyword">var</span> id = elements.attributes[<span class="string">'id'</span>].nodeValue;</div></td></tr></table></figure>
 </li>
 <li><p>removeNamedItem(name) 移除指定属性</p>
 </li>
@@ -157,7 +157,7 @@ normalize()合并文本节点">
 </ul>
 <h5 id="创建元素">创建元素</h5><ul>
 <li><p>document.createElement()<br>接收一个参数，创建的标签</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div><div class="line">3</div></div></td><td class="code"><div class="div4pre"><div class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</div><div class="line">div.id=<span class="string">"top"</span>;</div><div class="line">div.className = <span class="string">"m-top"</span>;</div></div></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div><div class="line">3</div></td><td class="code"><div class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</div><div class="line">div.id=<span class="string">"top"</span>;</div><div class="line">div.className = <span class="string">"m-top"</span>;</div></td></tr></table></figure>
 <ul>
 <li>IE中支持参数传入完整的标签内容，有助于避免IE7以及以前版本的一些bug</li>
 <li>不能动态设置iframe name属性</li>
@@ -166,7 +166,7 @@ normalize()合并文本节点">
 </ul>
 </li>
 </ul>
-<h5 id="Text文本节点">Text文本节点</h5><p>创建文本节点document.createTextNode()<br><figure class="highlight javascript"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></div></td><td class="code"><div class="div4pre"><div class="line"><span class="keyword">var</span> ele = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</div><div class="line"><span class="keyword">var</span> txt = <span class="built_in">document</span>.createTextNode(<span class="string">'hello'</span>);</div><div class="line">ele.appendChild(txt);</div><div class="line"><span class="built_in">document</span>.body.appendChild(ele);</div></div></td></tr></table></figure></p>
+<h5 id="Text文本节点">Text文本节点</h5><p>创建文本节点document.createTextNode()<br><figure class="highlight javascript"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></td><td class="code"><div class="line"><span class="keyword">var</span> ele = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</div><div class="line"><span class="keyword">var</span> txt = <span class="built_in">document</span>.createTextNode(<span class="string">'hello'</span>);</div><div class="line">ele.appendChild(txt);</div><div class="line"><span class="built_in">document</span>.body.appendChild(ele);</div></td></tr></table></figure></p>
 <h5 id="规范化文本节点">规范化文本节点</h5><ul>
 <li>使用normalize()方法合并文本节点</li>
 </ul>
@@ -185,7 +185,7 @@ normalize()合并文本节点">
 <li>操作复杂dom的时候，可以使用片段操作，这样会避免页面多次页面重新渲染</li>
 </ul>
 <h5 id="Attr属性">Attr属性</h5><ul>
-<li>创建属性<br>document.createAttribute()<figure class="highlight javascript"><table><tr><td class="gutter"><div class="div4pre"><div class="line">1</div><div class="line">2</div><div class="line">3</div></div></td><td class="code"><div class="div4pre"><div class="line"><span class="keyword">var</span> attr = <span class="built_in">document</span>.createAttribute(<span class="string">'align'</span>);</div><div class="line">attr.value = <span class="string">'left'</span>;</div><div class="line">ele.setAttribute(attr);</div></div></td></tr></table></figure>
+<li>创建属性<br>document.createAttribute()<figure class="highlight javascript"><table><tr><td class="gutter"><div class="line">1</div><div class="line">2</div><div class="line">3</div></td><td class="code"><div class="line"><span class="keyword">var</span> attr = <span class="built_in">document</span>.createAttribute(<span class="string">'align'</span>);</div><div class="line">attr.value = <span class="string">'left'</span>;</div><div class="line">ele.setAttribute(attr);</div></td></tr></table></figure>
 </li>
 </ul>
 <h5 id="selector_API">selector API</h5><ol>
